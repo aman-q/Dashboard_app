@@ -37,7 +37,7 @@ const View = () => {
 
     const deleteuser = async (id) => {
         try {
-            const res = await fetch(`https://crudappreactjs.herokuapp.com/deleteuser/${id}`, {
+            const res = await fetch(`https://dashboard-backend-d72f.onrender.com/deleteuser/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
