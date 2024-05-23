@@ -24,7 +24,7 @@ const Form = () => {
 
     const getdata = async (page = 1, searchTerm = '') => {
         try {
-            const res = await axios.get(`http://localhost:8001/api/users/getdata`, {
+            const res = await axios.get(`https://dashboard-backend-d72f.onrender.com/api/users/getdata`, {
                 params: {
                     page,
                     limit: itemsPerPage,
@@ -49,7 +49,7 @@ const Form = () => {
 
     const deleteuser = async (id) => {
         try {
-            const res = await axios.delete(`http://localhost:8001/api/users/deleteuser/${id}`, {
+            const res = await axios.delete(`https://dashboard-backend-d72f.onrender.com/api/users/deleteuser/${id}`, {
                 headers: {
                     "Content-Type": "application/json"
                 }
