@@ -30,7 +30,7 @@ const Register = () => {
         console.log("Submitting form with data:", { name, dob, contact, email, desc });
 
         try {
-            const res = await axios.post("http://localhost:8001/api/users/register", { name, dob, contact, email, desc }, {
+            const res = await axios.post("https://dashboard-backend-d72f.onrender.com/api/users/register", { name, dob, contact, email, desc }, {
                 headers: {
                     "Content-Type": "application/json"
                 }
