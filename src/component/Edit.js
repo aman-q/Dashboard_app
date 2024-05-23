@@ -25,7 +25,7 @@ const Edit = () => {
 
     const getdata = useCallback(async () => {
         try {
-            const res = await fetch(`http://localhost:8001/api/users/getuser/${id}`, {
+            const res = await fetch(`https://dashboard-backend-d72f.onrender.com/api/user/getuser/${id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ const Edit = () => {
         const { name, dob, contact, email, desc } = inputvalue;
 
         try {
-            const res = await fetch(`http://localhost:8001/api/users/updateuser/${id}`, {
+            const res = await fetch(`https://dashboard-backend-d72f.onrender.com/api/users/updateuser/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json'
