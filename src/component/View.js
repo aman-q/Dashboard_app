@@ -13,7 +13,7 @@ const View = () => {
 
     const getdata = useCallback(async () => {
         try {
-            const res = await fetch(`http://localhost:8001/api/users/getuser/${id}`, {
+            const res = await fetch(`https://dashboard-backend-d72f.onrender.com/api/users/getuser/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"
