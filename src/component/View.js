@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { MdDeleteForever, MdEdit } from 'react-icons/md';
+import { IoMdArrowBack } from 'react-icons/io';
 
 const View = () => {
     const [userdata, setUserdata] = useState({});
@@ -64,6 +65,7 @@ const View = () => {
 
             <Card sx={{ minWidth: 400, maxWidth: 800, margin: 'auto', padding: 2 }}>
                 <CardContent>
+                   <NavLink to='/'><IoMdArrowBack />back</NavLink>
                     <div className='add-btn d-flex justify-content-end'>
                         <NavLink to={`/edit/${userdata._id}`}>
                             <button className="btn btn-primary me-2"> <MdEdit size={20} /> </button>
